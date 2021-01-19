@@ -22,10 +22,10 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Kelvin Sung</o:Author>
   <o:LastAuthor>Kelvin Sung</o:LastAuthor>
-  <o:Revision>24</o:Revision>
-  <o:TotalTime>4775</o:TotalTime>
+  <o:Revision>25</o:Revision>
+  <o:TotalTime>4776</o:TotalTime>
   <o:Created>2019-02-11T00:47:00Z</o:Created>
-  <o:LastSaved>2021-01-10T18:26:00Z</o:LastSaved>
+  <o:LastSaved>2021-01-12T17:38:00Z</o:LastSaved>
   <o:Pages>3</o:Pages>
   <o:Words>881</o:Words>
   <o:Characters>5027</o:Characters>
@@ -44,7 +44,7 @@ w\:* {behavior:url(#default#VML);}
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:Zoom>170</w:Zoom>
+  <w:Zoom>210</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -296,6 +296,8 @@ w\:* {behavior:url(#default#VML);}
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="HTML Variable"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="annotation subject"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="No List"/>
@@ -382,9 +384,13 @@ w\:* {behavior:url(#default#VML);}
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Table Subtle 1"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Table Web 1"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Balloon Text"/>
   <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
@@ -1417,11 +1423,11 @@ refer to our course web-site<o:p></o:p></span></p>
 <h1><span style='mso-fareast-font-family:"Times New Roman"'>Objective<o:p></o:p></span></h1>
 
 <p class=MsoNormal>In this programming assignment we will familiarize ourselves
-with the programming environment, JavaScript programming language, our IDE,
-AND, develop a vertical slice through the existing engine building simple
-drawing functionality from the user program all the way to the GPU. The goals
-are for us to feel comfortable working with the source code system, to have a
-better understanding of the Engine source code as provided, and to verify our
+with the programming environment, JavaScript programming language, our IDE, AND,
+develop a vertical slice through the existing engine building simple drawing
+functionality from the user program all the way to the GPU. The goals are for
+us to feel comfortable working with the source code system, to have a better
+understanding of the Engine source code as provided, and to verify our
 understanding of the GPU interface. </p>
 
 <p class=MsoNormal>Though relatively straightforward, dealing with the
@@ -1473,7 +1479,7 @@ mso-border-bottom-alt:solid windowtext .75pt;padding:0in;mso-padding-alt:0in 0in
  style='width:310.5pt;height:232.5pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="mp1_files/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=414 height=310
-src="mp1_files/image003.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
+src="mp1_files/image002.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
 style='mso-spacerun:yes'> </span></p>
 
 <p class=MsoNormal style='margin-left:0in'><o:p>&nbsp;</o:p></p>
@@ -1486,8 +1492,8 @@ auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 style='font-size:11.0pt;mso-fareast-font-family:"Times New Roman"'><span
 style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
-style='font-size:11.0pt'>Triangle:</span></b><span style='font-size:11.0pt'> the
-simplest shape with an area, <o:p></o:p></span></p>
+style='font-size:11.0pt'>Triangle:</span></b><span style='font-size:11.0pt'>
+the simplest shape with an area, <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:23.05pt;mso-add-space:
 auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
@@ -1689,10 +1695,11 @@ solid windowtext .75pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><o:p>&nbsp
 auto;text-indent:-.25in;mso-list:l4 level1 lfo6'><![if !supportLists]><span
 style='mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>This
-assignment also serves as a motivation for learning about transformation in Chapter
-3, as such, you are <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
-normal'><u>not</u></i></b> allowed to use materials from Chapter 3. My
-implementation is based on Example 2.6 (Parameterized Fragment Shader).</p>
+assignment also serves as a motivation for learning about transformation in
+Chapter 3, as such, you are <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><u>not</u></i></b> allowed to use materials
+from Chapter 3. My implementation is based on Example 2.6 (Parameterized
+Fragment Shader).</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:41.05pt;mso-add-space:
 auto'><o:p>&nbsp;</o:p></p>
@@ -1912,7 +1919,7 @@ style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   normal;mso-list:l5 level1 lfo10;tab-stops:list -.5in'><![if !supportLists]><span
   style='mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'><span
   style='mso-list:Ignore'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><![endif]>At least 1 with Width scale &gt; Height scale</p>
+  </span></span></span><![endif]>At least 1 with Width scale &lt; Height scale</p>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
   margin-left:38.35pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:
   normal;mso-list:l5 level1 lfo10;tab-stops:list -.5in'><![if !supportLists]><span
@@ -1982,7 +1989,7 @@ style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   normal;mso-list:l1 level1 lfo12;tab-stops:list -.5in'><![if !supportLists]><span
   style='mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'><span
   style='mso-list:Ignore'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><![endif]>At least 1 with Width scale &gt; Height scale</p>
+  </span></span></span><![endif]>At least 1 with Width scale &lt; Height scale</p>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
   margin-left:38.35pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:
   normal;mso-list:l1 level1 lfo12;tab-stops:list -.5in'><![if !supportLists]><span
