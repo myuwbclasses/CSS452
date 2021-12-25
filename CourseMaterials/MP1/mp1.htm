@@ -22,11 +22,11 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Kelvin Sung</o:Author>
   <o:LastAuthor>Kelvin Sung</o:LastAuthor>
-  <o:Revision>25</o:Revision>
-  <o:TotalTime>4776</o:TotalTime>
+  <o:Revision>32</o:Revision>
+  <o:TotalTime>4781</o:TotalTime>
   <o:Created>2019-02-11T00:47:00Z</o:Created>
-  <o:LastSaved>2021-01-12T17:38:00Z</o:LastSaved>
-  <o:Pages>3</o:Pages>
+  <o:LastSaved>2021-12-24T23:29:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
   <o:Words>881</o:Words>
   <o:Characters>5027</o:Characters>
   <o:Company>UWB</o:Company>
@@ -43,8 +43,7 @@ w\:* {behavior:url(#default#VML);}
 <link rel=colorSchemeMapping href="mp1_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:View>Print</w:View>
-  <w:Zoom>210</w:Zoom>
+  <w:Zoom>230</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -680,9 +679,9 @@ w\:* {behavior:url(#default#VML);}
 	panose-1:2 1 6 1 0 1 1 1 1 1;
 	mso-font-alt:\65B0\7D30\660E\9AD4;
 	mso-font-charset:136;
-	mso-generic-font-family:auto;
+	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:1 134742016 16 0 1048576 0;}
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
 @font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;
@@ -1423,11 +1422,11 @@ refer to our course web-site<o:p></o:p></span></p>
 <h1><span style='mso-fareast-font-family:"Times New Roman"'>Objective<o:p></o:p></span></h1>
 
 <p class=MsoNormal>In this programming assignment we will familiarize ourselves
-with the programming environment, JavaScript programming language, our IDE, AND,
-develop a vertical slice through the existing engine building simple drawing
-functionality from the user program all the way to the GPU. The goals are for
-us to feel comfortable working with the source code system, to have a better
-understanding of the Engine source code as provided, and to verify our
+with the programming environment, JavaScript programming language, our IDE,
+AND, develop a vertical slice through the existing engine building simple
+drawing functionality from the user program all the way to the GPU. The goals
+are for us to feel comfortable working with the source code system, to have a
+better understanding of the Engine source code as provided, and to verify our
 understanding of the GPU interface. </p>
 
 <p class=MsoNormal>Though relatively straightforward, dealing with the
@@ -1479,7 +1478,7 @@ mso-border-bottom-alt:solid windowtext .75pt;padding:0in;mso-padding-alt:0in 0in
  style='width:310.5pt;height:232.5pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="mp1_files/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=414 height=310
-src="mp1_files/image002.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
+src="mp1_files/image003.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
 style='mso-spacerun:yes'> </span></p>
 
 <p class=MsoNormal style='margin-left:0in'><o:p>&nbsp;</o:p></p>
@@ -1492,8 +1491,8 @@ auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 style='font-size:11.0pt;mso-fareast-font-family:"Times New Roman"'><span
 style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
-style='font-size:11.0pt'>Triangle:</span></b><span style='font-size:11.0pt'>
-the simplest shape with an area, <o:p></o:p></span></p>
+style='font-size:11.0pt'>Triangle:</span></b><span style='font-size:11.0pt'> the
+simplest shape with an area, <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:23.05pt;mso-add-space:
 auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
@@ -1543,10 +1542,11 @@ style='mso-bidi-font-style:normal'>uOffset</i></b></span><b style='mso-bidi-font
 normal'><i style='mso-bidi-font-style:normal'> </i></b>and <span class=SpellE><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>uScale</i></b></span><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'> </i></b>(both
-vec2). Modify your <span class=SpellE>SimpleVS.glsl</span> to work with the <span
+vec2). Modify your <span class=SpellE>simple_<span class=GramE>vs.glsl</span></span>
+to work with the <span class=SpellE><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>uOffset</i></b></span> and <span
 class=SpellE><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
-normal'>uOffset</i></b></span> and <span class=SpellE><b style='mso-bidi-font-weight:
-normal'><i style='mso-bidi-font-style:normal'>uScale</i></b></span>:</p>
+normal'>uScale</i></b></span>:</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;mso-add-space:
 auto'><span style='font-family:Consolas'>// Primitive offset and scale<o:p></o:p></span></p>
@@ -1662,7 +1662,7 @@ auto'><span style='font-size:11.0pt;font-family:Consolas'>var delta = (2.0 * <sp
 class=SpellE>Math.PI</span>)/ (mCircleNumVertex-1);<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;mso-add-space:
-auto'><span style='font-size:11.0pt;font-family:Consolas'>for (var i = 1;
+auto'><span style='font-size:11.0pt;font-family:Consolas'>for (let i = 1;
 i&lt;=<span class=SpellE>mCircleNumVertex</span>; i++) {<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;mso-add-space:
@@ -1671,11 +1671,11 @@ delta;<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;mso-add-space:
 auto'><span style='font-size:11.0pt;font-family:Consolas'><span
-style='mso-spacerun:yes'>      </span>var x = 0.5 * <span class=SpellE>Math.cos</span>(angle);<o:p></o:p></span></p>
+style='mso-spacerun:yes'>      </span>let x = 0.5 * <span class=SpellE>Math.cos</span>(angle);<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:1.5in;mso-add-space:auto'><span
 style='font-size:11.0pt;font-family:Consolas'><span
-style='mso-spacerun:yes'>      </span>var y = 0.5 * <span class=SpellE>Math.sin</span>(angle);<o:p></o:p></span></p>
+style='mso-spacerun:yes'>      </span>let y = 0.5 * <span class=SpellE>Math.sin</span>(angle);<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:77.05pt;text-indent:30.95pt;line-height:
 normal'><span style='font-family:Consolas'>}<o:p></o:p></span></p>
@@ -1698,8 +1698,8 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
 assignment also serves as a motivation for learning about transformation in
 Chapter 3, as such, you are <b style='mso-bidi-font-weight:normal'><i
 style='mso-bidi-font-style:normal'><u>not</u></i></b> allowed to use materials
-from Chapter 3. My implementation is based on Example 2.6 (Parameterized
-Fragment Shader).</p>
+from Chapter 3. My implementation is based on Example 2.6 (parameterized fragment
+shader).</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:41.05pt;mso-add-space:
 auto'><o:p>&nbsp;</o:p></p>
@@ -1714,24 +1714,25 @@ sure you understand:</p>
 auto;text-indent:-.25in;mso-list:l4 level2 lfo6'><![if !supportLists]><span
 style='mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>a.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'>Core/<span
-class=SpellE>Engine_VertexBuffer</span></b>: you have to create two other
-buffers just like what we have done for the square.</p>
+</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'>engine/<span
+class=SpellE>vertex_buffer</span></b>: you have to create two other buffers
+just like what we have done for the square.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:77.05pt;mso-add-space:
 auto;text-indent:-.25in;mso-list:l4 level2 lfo6'><![if !supportLists]><span
 style='mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>b.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b
-style='mso-bidi-font-weight:normal'>Shader</b>: you need to understand from
-which buffer you want to load to support the drawing of the shape</p>
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><b style='mso-bidi-font-weight:normal'>simple_shader</b></span>:
+you need to understand from which buffer you want to load to support the
+drawing of the shape</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:77.05pt;mso-add-space:
 auto;text-indent:-.25in;mso-list:l4 level2 lfo6'><![if !supportLists]><span
 style='mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>c.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span class=SpellE><b style='mso-bidi-font-weight:
-normal'>GLSLShaders</b></span><b style='mso-bidi-font-weight:normal'>/<span
-class=SpellE>SimpleVS</span></b>: recall that the <span class=SpellE>aSquareVertexPosition</span>
+normal'>glsl_shaders</b></span><b style='mso-bidi-font-weight:normal'>/<span
+class=SpellE>simple_vs</span></b>: recall that the <span class=SpellE>aVertexPosition</span>
 is connected to a buffer that contains the vertices of the unit square.<br
 style='mso-special-character:line-break'>
 <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
