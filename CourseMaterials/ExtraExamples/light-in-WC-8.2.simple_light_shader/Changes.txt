@@ -1,0 +1,16 @@
+Changes:
+
+1. CPU: Pass information to the glsl shader in WC
+        light_shader.js: Line 55 and 56
+             No need to transform into screen space
+
+2. GLSL Shader: Vertex shader (TextureVS in this case) 
+   Computes and pass WC position to the fragment shader
+        texture_vs.glsl: 2 Changes 
+             Line 11: add in a new varying
+             Line 26: compute WC position
+        
+3. GLSL shader: Fragment shader (LightFS)
+   Performs computation in WC space using the WC position passed down
+         light_fs.glsl: 1 Changes
+             Line 34: compute distance using WC position
