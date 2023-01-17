@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example: on global function call</title>
+        <link rel ="icon" type ="image/x-icon" href="./favicon.png">
+
+        <!-- the following says there are javascript source code contained in 
+             the external source files
+        -->
+        <!-- core of the game engine -->
+        <script type="module" src="./src/core.js"></script>  
+    </head>
+
+    <body>
+        <canvas id="GLCanvas" width="640" height="480">
+            <!-- GLCanvas is the area we will draw in: a 640x480 area. -->
+            Your browser does not support the HTML5 canvas.
+            <!-- this message will show only if WebGL clearing failed -->
+        </canvas>
+        <br><b>The above is WebGL draw area!</b>
+        <script type="text/javascript">
+            function myFunc(message) {
+                let elm = document.getElementById("FancyName");
+                elm.innerHTML = "<br><b>YES!</b><br>" + message;    
+                // What is the difference with the following?
+                //      elm.innerHTML += "<br><b>YES!</b><br>" + message;    
+            }
+        </script>
+        <hr>
+        <div id="FancyName"></div>
+        <hr>
+    </body>
+</html>
